@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparatif VPN - Les Pires VPN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .section-title {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #f44336;
+        }
+        .highlight-ad, .ad-section {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .highlight-ad a, .ad-section a {
+            color: #856404;
+            text-decoration: none;
+        }
+        .highlight-ad a:hover, .ad-section a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        /* Pop-up style */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .popup h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .popup a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .popup a:hover {
+            background-color: #0056b3;
+        }
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            background-color: transparent;
+            border: none;
+        }
+        /* Dark overlay for the popup */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Comparatif des VPN</h1>
+</header>
+
+<div class="container">
+    <!-- Publicité sous l'entête -->
+    <div class="highlight-ad">
+        Automatisez votre serveur Discord dès aujourd'hui avec un bot sur mesure ! <a href="https://leodevlopement.onrender.com/" target="_blank">Découvrez nos solutions de bots personnalisés</a> et améliorez votre gestion de communauté.
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>VPN</th>
+                <th>Prix Mensuel</th>
+                <th>Nombre de Serveurs</th>
+                <th>Pays Disponibles</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>NordVPN</td>
+                <td>11,99€</td>
+                <td>5500+</td>
+                <td>60+</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>VPN Unlimited</td>
+                <td>9,99€</td>
+                <td>400+</td>
+                <td>80</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>ExpressVPN</td>
+                <td>12,95€</td>
+                <td>3000+</td>
+                <td>94</td>
+                <td>8,5/10</td>
+            </tr>
+            <tr>
+                <td>CyberGhost</td>
+                <td>10,89€</td>
+                <td>9700+</td>
+                <td>91</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>Norton Secure VPN</td>
+                <td>7,99€</td>
+                <td>2000+</td>
+                <td>30+</td>
+                <td>7,5/10</td>
+            </tr>
+            <tr>
+                <td>Surfshark</td>
+                <td>10,95€</td>
+                <td>3200+</td>
+                <td>100+</td>
+                <td>9/10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Section des VPN horribles -->
+    <h2 class="section-title">Les Pires VPN</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>VPN</th>
+                <th>Prix Mensuel</th>
+                <th>Nombre de Serveurs</th>
+                <th>Pays Disponibles</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola VPN</td>
+                <td>Gratuit / 14,99€ (Premium)</td>
+                <td>1000+</td>
+                <td>40+</td>
+                <td>2/10</td>
+            </tr>
+            <tr>
+                <td>SuperVPN</td>
+                <td>8,99€</td>
+                <td>Inconnu</td>
+                <td>20</td>
+                <td>3/10</td>
+            </tr>
+            <tr>
+                <td>Psiphon</td>
+                <td>Gratuit</td>
+                <td>Inconnu</td>
+                <td>20</td>
+                <td>4/10</td>
+            </tr>
+            <tr>
+                <td>Betternet</td>
+                <td>11,99€</td>
+                <td>Inconnu</td>
+                <td>30</td>
+                <td>4/10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Publicité en bas de la section -->
+    <div class="ad-section">
+        Besoin d'un bot Discord personnalisé pour automatiser vos serveurs ? <a href="https://leodevlopement.onrender.com/" target="_blank">Découvrez nos solutions de bots Discord personnalisés</a> et améliorez votre communauté dès aujourd'hui !
+    </div>
+</div>
+
+<!-- Pop-up et overlay -->
+<div class="overlay" id="popupOverlay"></div>
+<div class="popup" id="popupAd1">
+    <button class="popup-close" onclick="closePopup('popupAd1')">&times;</button>
+    <h2>Automatisez votre Discord !</h2>
+    <p>Créez votre bot Discord personnalisé avec nous !</p>
+    <a href="https://leodevlopement.onrender.com/" target="_blank">Cliquez ici pour découvrir nos bots !</a>
+</div>
+
+<div class="popup" id="popupAd2">
+    <button class="popup-close" onclick="closePopup('popupAd2')">&times;</button>
+    <h2>Gérez votre communauté !</h2>
+    <p>Un bot personnalisé vous attend !</p>
+    <a href="https://leodevlopement.onrender.com/" target="_blank">Créez votre bot ici !</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Comparatif VPN. Tous droits réservés.</p>
+    <p>Envie d'un bot Discord personnalisé ? <a href="https://leodevlopement.onrender.com/" target="_blank">Découvrez nos services !</a></p>
+</footer>
+
+<script>
+    function showPopup(popupId) {
+        document.getElementById(popupId).style.display = 'block';
+        document.getElementById('popupOverlay').style.display = 'block';
+    }
+
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        document.getElementById('popupOverlay').style.display = 'none';
+    }
+
+    // Affichage des pop-ups après quelques secondes
+    setTimeout(function() {
+        showPopup('popupAd1');
+    }, 5000);
+
+    // Affichage du deuxième pop-up après un certain délai
+    setTimeout(function() {
+        showPopup('popupAd2');
+    }, 15000);
+</script>
+
+</body>
+</html>
